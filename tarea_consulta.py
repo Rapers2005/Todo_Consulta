@@ -214,7 +214,7 @@ class Ui_MainWindow(object):
 
 
         self.textEdit_3 = QtWidgets.QTextEdit(self.widget4)
-        self.textEdit_3.setGeometry(QtCore.QRect(140, 80, 250, 70))  # Ajusta el tamaño y la posición según sea necesario
+        self.textEdit_3.setGeometry(QtCore.QRect(140, 80, 250, 70))  
         self.textEdit_3.setObjectName("textEdit_3")
 
         self.pushButton_9 = QtWidgets.QPushButton(self.widget4)
@@ -347,7 +347,7 @@ class Ui_MainWindow(object):
                                                  options=opciones)
         if archivo:
             print(f"Archivo seleccionado: {archivo}")
-            # Aquí podrías actualizar un label o almacenar la ruta del archivo
+            
 
     def eliminar_consulta_y_volver(self):
         """Borra todos los campos de las pestañas y vuelve a la primera pestaña."""
