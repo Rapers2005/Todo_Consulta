@@ -1,22 +1,12 @@
+
 import sys
+from PySide6.QtWidgets import QApplication
+from modelo import TODOModelo
+from controlador import TODOControlador
 
-from PyQt5.QtWidgets import QApplication
-
-from controlador import ControladorTareas
-from modelo import ModeloTareas
-from vista import Vista
-
-
-def main():
+if __name__ == "__main__":
     app = QApplication(sys.argv)
-
-
-    modelo = ModeloTareas()
-    vista = Vista()
-    controlador = ControladorTareas(modelo, vista)
-    vista.show()
-
-    sys.exit(app.exec_())
-
-if __name__ == '__main__':
-    main()
+    modelo = TODOModelo()
+    controlador = TODOControlador(modelo)
+    controlador.show()
+    sys.exit(app.exec())

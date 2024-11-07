@@ -1,3 +1,4 @@
-Todo.py
-/.idea
-/.venv
+.idea/
+__pycache__/
+my-venv/
+__pycache__

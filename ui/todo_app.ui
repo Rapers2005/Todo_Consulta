@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>TODO</class>
+ <widget class="QMainWindow" name="TODO">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -9,6 +9,12 @@
     <width>800</width>
     <height>600</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -24,6 +30,28 @@
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Lista de Tareas</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
      <item>
       <widget class="QListWidget" name="listWidget">
        <property name="selectionMode">
@@ -45,6 +73,12 @@
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QLineEdit" name="lineEdit">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Indicar tarea</string>
        </property>
@@ -64,8 +98,14 @@
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
       <widget class="QPushButton" name="pushButton">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>Agregar</string>
+        <string>Agregar tarea</string>
        </property>
       </widget>
      </item>
@@ -83,6 +123,12 @@
     <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
       <widget class="QPushButton" name="pushButton_2">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Completada</string>
        </property>
@@ -102,6 +148,12 @@
     <layout class="QHBoxLayout" name="horizontalLayout_4">
      <item>
       <widget class="QPushButton" name="pushButton_3">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Eliminar</string>
        </property>
@@ -119,6 +171,12 @@
      <height>24</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuTODO">
+    <property name="title">
+     <string>TODO</string>
+    </property>
+   </widget>
+   <addaction name="menuTODO"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

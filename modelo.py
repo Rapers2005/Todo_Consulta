@@ -1,21 +1,23 @@
-class ModeloTareas:
+
+
+class TODOModelo:
     def __init__(self):
         self.__tareas = []
 
+
     def agregar_tarea(self, tarea):
+        self.__tareas.append({"tarea": tarea, "completada": False})
 
-        self.__tareas.append({'tarea': tarea, 'completada': False})
 
-    def eliminar_tarea(self, tarea, donde=None):
+    def completar_tarea(self, indice):
+        if 0 <= indice < len(self.__tareas):
+            self.__tareas[indice]["completada"] = True
 
-        self.__tareas = [t for t in self.__tareas if t['tarea'] != tarea]
 
-    def marcar_completada(self, tarea):
+    def eliminar_tarea(self, indice):
+        if 0 <= indice < len(self.__tareas):
+            self.__tareas.pop(indice)
 
-        for t in self.__tareas:
-            if t['tarea'] == tarea:
-                t['completada'] = True
 
     def obtener_tareas(self):
-
-        return self.__tareas
+        return self.__tareas.copy()
